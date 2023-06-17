@@ -1,0 +1,83 @@
+.programs-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.programs-title{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.programs-title>:nth-child(2){
+    color: aliceblue;
+}
+
+.programs-body{
+    display: flex;
+    padding: 2rem;
+}
+.program{
+    background-color: var(--caloryCard);
+    fill: beige;
+    padding: 1.5rem;
+    margin: .5rem;
+    color: white;
+}
+.program:hover{
+    background: var(--planCard);
+    cursor: pointer;
+}
+.program>:nth-child(1){
+    height: 2rem;
+    width: 3rem;
+    margin-bottom: .4rem;
+}
+.program>:nth-child(2){
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: .3rem;
+}
+.program>:nth-child(3){
+    opacity: .8;
+    margin-bottom: .8rem;
+}
+
+.program>button{
+    background: transparent;
+    color: aliceblue;
+    font-weight: bold;
+    padding: .5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.program>button:hover{
+    color: black;
+}
+.left-arrow{
+    width: .9rem;
+    display: inline-block;
+    margin-top: .2rem;
+}
+
+@media screen and (max-width:768px) {
+    .programs-container{
+        top: 23rem;
+        margin-bottom: 10rem;
+    }
+    .programs-title{
+        font-size: 1rem;
+        flex-direction: column;
+        margin-bottom: -12rem;
+        align-items: center;
+    }
+    .programs-body{
+        flex-direction: column;
+        scale: .7;
+    }   
+}

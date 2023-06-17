@@ -1,0 +1,197 @@
+.plans {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  position: relative;
+}
+.plans>:nth-child(2){
+  width: 17rem;
+  height: 17rem;
+  position: absolute;
+  left: 3rem;
+  
+}
+.plans-title {
+  margin-bottom: 3rem;
+}
+.plans-title > span {
+  font-size: 3rem;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+.plans-title > :nth-child(2) {
+  color: var(--orange);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.plans-card {
+  display: flex;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  background-color: rgb(164, 164, 164);
+  padding: 1.8rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0), 0rem 0.1rem 0.1rem rgb(0, 0, 0);
+  opacity: 1;
+}
+.card-container:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+.card-container > svg {
+  fill: var(--orange);
+  height: 2rem;
+  width: 2rem;
+  margin: 0.5rem;
+}
+.card-container > img {
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+.card-container > h4 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+}
+.card-container > span {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+/* .plan-details{
+    padding: 1rem 0;
+} */
+.plan-details > div {
+  display: flex;
+  padding: 0.5rem;
+}
+.plan-details > div > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+.plan-details > div > span {
+  font-size: 1rem;
+}
+.card-container > div > span {
+  color: rgb(0, 4, 255);
+  opacity: 1;
+}
+.card-container > div > span:hover {
+  opacity: 1;
+  color: rgb(255, 255, 255);
+}
+.card-container > button {
+  width: 14rem;
+  margin-top: 1rem;
+  height: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+.plans-card > :nth-child(2) {
+  scale: 1.1;
+  background: var(--planCard);
+}
+.plans-card > :nth-child(2) > svg {
+  fill: blanchedalmond;
+}
+.plans-card > :nth-child(2) > button {
+  background-color: rgb(255, 255, 255);
+  margin-top: 2rem;
+}
+.plans-card > :nth-child(2) > button:hover {
+  background-color: rgb(97, 97, 97);
+  color: white;
+}
+
+
+@media screen and (max-width:768px) {
+  
+  .plans {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  .plans>:nth-child(2){
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    left: 3rem;
+  }
+  .plans-title {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .plans-title > span {
+    font-size: 1.5rem;
+  }
+  
+  .plans-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card-container {
+    background-color: rgb(164, 164, 164);
+    padding: .8rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0), 0rem 0.1rem 0.1rem rgb(0, 0, 0);
+    opacity: 1;
+  }
+  .card-container:hover {
+    cursor: pointer;
+    opacity: .9;
+  }
+  .card-container > svg {
+    fill: var(--orange);
+    height: 1.5rem;
+    width: 2rem;
+    margin: 0.4rem;
+  }
+  .card-container > img {
+    width: 1.5rem;
+  }
+  .card-container > h4 {
+    font-size: 1.2rem;
+  }
+  .card-container > span {
+    font-size: 1.3rem;
+    padding-left: .4rem;
+  }
+  .plan-details > div {
+    display: flex;
+    padding: 0.3rem;
+  }
+  .plan-details > div > img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+  .plan-details > div > span {
+    font-size: .9rem;
+  }
+  .card-container > div > span {
+    font-size: .9rem;
+    padding-left: .5rem;
+  }
+  .card-container > div > span:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  .card-container > button {
+    width: 14rem;
+    height: .5rem;
+    font-weight: bold;
+  }
+  .plans-card > :nth-child(2) {
+    scale: 1.05;
+  }
+}

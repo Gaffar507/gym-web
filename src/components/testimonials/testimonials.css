@@ -1,0 +1,188 @@
+.testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+}
+.left-t{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 5rem;
+}
+.left-t>:nth-child(1){
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--orange);
+    letter-spacing: .2rem;
+}
+.left-t>:nth-child(2){
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.left-t>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 6rem;
+}
+.person-info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.person-info>:nth-child(1){
+    font-weight: normal;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+.name-info>:nth-child(1){
+    color: var(--orange);
+}
+
+.right-t{
+    flex: 1 ;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+}
+.right-t>:nth-child(1){
+    border: .1rem solid orange;
+    width: 17rem;
+    height: 20rem;
+    position: absolute;
+    right: 8rem;
+    top: 5rem;
+}
+.right-t>:nth-child(2){
+    background: var(--planCard);
+    width: 17rem;
+    height: 20rem;
+    position: absolute;
+    right: 6rem;
+    top: 7rem;
+}
+.right-t>img{
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    right: 7rem;
+    top: 6rem;
+}
+.right-t>div{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    top: 25rem;
+    right: 30rem;
+}
+.right-t>div>img{
+    width: 1.5rem;
+    transition: var(--transition);
+}
+.right-t>div>img:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px){
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .left-t{
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        line-height: 2.5rem;
+    }
+    .left-t>:nth-child(1){
+        font-size: .9rem;
+        letter-spacing: .2rem;
+        margin-bottom: .5rem;
+    }
+    .left-t>:nth-child(2){
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    .left-t>:nth-child(3){
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 2rem;
+    }
+    .person-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .person-info>:nth-child(1){
+        font-size: .6rem;
+        line-height: .9rem;
+        word-spacing: .1rem;
+    }
+    .name-info{
+        font-size: .7rem;
+    }
+
+    .right-t{
+        flex: 1 ;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        position: relative;
+        margin-bottom: 25rem;
+    }
+    .right-t>:nth-child(1){
+        border: .1rem solid orange;
+        width: 12rem;
+        height: 14rem;
+        position: absolute;
+        right: 2rem;
+        top: 0rem;
+    }
+    .right-t>:nth-child(2){
+        background: var(--planCard);
+        width: 12rem;
+        height: 14rem;
+        position: absolute;
+        right: 4rem;
+        top: 2rem;
+    }
+    .right-t>img{
+        width: 12rem;
+        height: 14rem;
+        object-fit: cover;
+        position: absolute;
+        right: 3rem;
+        top: 1rem;
+    }
+
+    .right-t>div{
+        display: flex;
+        gap: .7rem;
+        position: absolute;
+        top: 17.5rem;
+        right: 7rem;
+    }
+    .right-t>div>img{
+        width: 1.2rem;
+        transition: var(--transition);
+    }
+    .right-t>div>img:hover{
+        scale: 1.2;
+        cursor: pointer;
+    }
+    
+}
